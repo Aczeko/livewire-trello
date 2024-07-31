@@ -17,8 +17,14 @@ class Column extends Model implements Sortable
         'sort_when_creating' => true,
     ];
 
+    protected $guarded = ['id'];
     public function cards()
     {
         return $this->hasMany(Card::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }

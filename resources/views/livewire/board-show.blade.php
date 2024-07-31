@@ -9,9 +9,9 @@
 
         <div class="flex w-max space-x-6 h-[calc(theme('height.screen')-65px-73px-theme('padding.12'))]">
 
-            @foreach(range(1,random_int(1,10)) as $column)
+            @foreach ($columns as $column)
 
-                <livewire:column />
+                <livewire:column wire:key="$column->id" :column="$column" />
 
             @endforeach
 

@@ -47,11 +47,11 @@ All items, like boards, columns and cards are saved in a MySQL database and are 
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
-    DB_DATABASE=livewire_trello_test
+    DB_DATABASE=livewire_trello
     DB_USERNAME=root
     DB_PASSWORD= 
     ```
-5. Migrate your tables
+5. Migrate the tables
    
     ```bash
     php artisan migrate

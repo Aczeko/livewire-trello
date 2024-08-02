@@ -9,7 +9,7 @@
 
         @foreach($boards as $board)
 
-            <a href="{{ route('boards.show', $board) }}" class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg h-36 flex items-end p-6 text-gray-900 dark:text-white">
+            <a href="{{ route('boards.show', $board) }}" class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg h-36 flex items-end p-6 text-gray-900 dark:text-white text-lg">
 
                 {{ $board->title }}
 

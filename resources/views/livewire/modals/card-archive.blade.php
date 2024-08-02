@@ -13,7 +13,7 @@
             </div>
 
         @empty
-            <p>You have no archived cards</p>
+            <p class="dark:text-white">You have no archived cards</p>
 
         @endforelse
 

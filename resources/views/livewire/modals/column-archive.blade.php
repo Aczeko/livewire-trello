@@ -13,7 +13,7 @@
             </div>
 
         @empty
-            <p>You have no archived columns</p>
+            <p class="dark:text-white">You have no archived columns</p>
 
         @endforelse
 

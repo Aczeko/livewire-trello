@@ -3,7 +3,6 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Installation](#installation)
-- [Example Markdown File](#example-markdown-file)
 - [Useful Links](#useful-links)
 
 ---

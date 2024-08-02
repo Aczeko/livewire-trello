@@ -5,7 +5,7 @@
 </x-slot>
 
 <div class="py-12">
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 grid grid-cols-4 gap-6">
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
 
         @foreach($boards as $board)
 

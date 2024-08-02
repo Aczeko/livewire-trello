@@ -1,4 +1,4 @@
-<div class="w-[260px] bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 self-start shrink-0 rounded-lg shadow-sm max-h-full flex flex-col">
+<div class="w-[300px] bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 self-start shrink-0 rounded-lg shadow-sm max-h-full flex flex-col">
     <div class="flex items-center justify-between" >
         <div
                 x-data="{ editing: false }"

@@ -17,6 +17,11 @@ class Card extends Model implements Sortable
 
     protected $guarded = ['id'];
 
+    public function buildSortQuery(): Builder
+    {
+        return static::query()->where('column_id', $this->column_id);
+    }
+
     public $sortable = [
         'order_column_name' => 'order',
         'sort_when_creating' => true,

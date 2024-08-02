@@ -17,7 +17,7 @@
 
         @endforeach
 
-        <button class="bg-gray-200 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg h-36 flex items-end p-6 text-gray-900 dark:text-white text-lg">
+        <button class="bg-gray-200 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg h-36 flex items-end p-6 text-gray-900 dark:text-white text-lg" wire:click="$dispatch('openModal', { component: 'modals.create-board' })">
 
             <div class="flex items-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">

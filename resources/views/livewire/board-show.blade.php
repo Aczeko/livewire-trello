@@ -17,6 +17,10 @@
                         Archived cards
                     </x-dropdown-button>
 
+                    <x-dropdown-button x-on:click="Livewire.dispatch('openModal', { component: 'modals.column-archive', arguments: { board: {{ $board->id }} } })">
+                        Archived columns
+                    </x-dropdown-button>
+
                 </x-slot>
             </x-dropdown>
         </div>

@@ -23,6 +23,15 @@ class Column extends Component
         $this->editColumnForm->title = $this->column->title;
     }
 
+    public function archiveColumn()
+    {
+        $this->column->update([
+            'archived_at' => now(),
+        ]);
+
+        $this->dispatch('board-updated');
+    }
+
     public function updateColumn() {
         $this->editColumnForm->validate();
 

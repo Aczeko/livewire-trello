@@ -9,7 +9,7 @@
                     {{ $card->title }}
                 </div>
 
-                <button class="text-sm text-gray-500 dark:text-gray-400">Put back</button>
+                <button class="text-sm text-gray-500 dark:text-gray-400" wire:click="unarchiveCard({{ $card->id }})">Put back</button>
             </div>
 
         @empty

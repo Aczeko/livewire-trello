@@ -15,6 +15,8 @@ It has the ability to edit column titles inline, edit cards and add notes, archi
 
 All items, like boards, columns and cards are saved in a MySQL database and are updated while they are being sorted.
 
+It also supports dark and light mode, depending on your system-preference.
+
 </section>
 
 <section id="installation">

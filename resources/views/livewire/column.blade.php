@@ -15,7 +15,8 @@
             </button>
             <template x-if="editing">
                 <form wire:submit="updateColumn" class="-ml-[calc(theme('margin[1.5]')+1px)] grow">
-                    <x-text-input value="Column title" class="h-8 px-1.5 w-full" wire:model="editColumnForm.title" />
+                    <x-text-input value="Column title" class="h-8 px-1.5 w-full" wire:model="editColumnForm.title" x-init="$el.focus()" />
+
                 </form>
             </template>
         </div>
@@ -39,6 +40,7 @@
     <div
             class="p-3 space-y-1.5 pt-0 overflow-y-auto"
             wire:sortable-group.item-group="{{ $column->id }}"
+            wire:sortable-group.options="{ ghostClass: 'opacity-20' }"
     >
         @foreach ($cards as $card)
             <div wire:key="{{ $card->id }}" wire:sortable-group.item="{{ $card->id }}">

@@ -36,11 +36,6 @@ It also supports dark and light mode, depending on your system-preference.
     npm install
     composer install 
     ```
-5. Generate a new Application Key:
-
-    ```bash
-    php artisan key:generate
-    ```
     
 4. Duplicate the .env.example file and save it as .env
     - here you can set up your database connection
@@ -53,13 +48,19 @@ It also supports dark and light mode, depending on your system-preference.
     DB_USERNAME=root
     DB_PASSWORD= 
     ```
-5. Migrate the tables
+5. Generate a new Application Key:
+
+    ```bash
+    php artisan key:generate
+    ```
+    
+6. Migrate the tables
    
     ```bash
     php artisan migrate
     ```
 
-6. Run your build process with:
+7. Run your build process with:
 
     ```bash
     npm run dev
